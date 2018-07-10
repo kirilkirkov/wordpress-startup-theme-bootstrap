@@ -22,9 +22,9 @@
         $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
         if (has_custom_logo()) {
             ?>
-            <img src="<?= esc_url($logo[0]) ?>" alt="Каризматик панчарево - Салон за красота" class="img-responsive logo">
+            <img src="<?= esc_url($logo[0]) ?>" alt="Logo" class="img-responsive">
             <?php
         } else {
-            echo 'Не е добавено лого';
+            echo 'No logo added';
         }
         ?>
